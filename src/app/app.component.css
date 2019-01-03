@@ -1,0 +1,58 @@
+/*#entcomp {*/
+/*    height: 100vh;*/
+/*}*/
+/*#entcomp::after {*/
+/*    content: "";*/
+/*    background: url("/assets/background.jpg");*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    height: 100vh;*/
+/*    opacity: 0.5;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    right: 0;*/
+/*    position: absolute;*/
+/*    z-index: -1;  */
+/*}*/
+#welcome {
+    font-size: 36px;
+    text-align: center;
+    padding-top: 10px;
+}
+#datadet {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+#wdes {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+#wdata {
+    font-size: 18px;
+    text-align: center;
+    width: 75%;
+    margin-left: 12.5%;
+}
+.wdatabox{
+    margin-top: 10px;
+}
+.wtexthead {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.wtextdata {
+    /*placeholder*/
+}
+.wtextdata.subdata {
+    font-size: 0.7em;
+}
+.wtextnote {
+    font-style: italic;
+    font-size: 10px;
+    width:50%;
+    margin-left: 25%;
+}

@@ -1,0 +1,38 @@
+<div id="entcomp">
+    <div id="welcome">
+        <div>Welcome to {{config.CityName}}!</div>
+    </div>
+    <div id="datadet">
+        <div>Data as of {{config.DateTime * 1000 | date:'M/dd/yy HH:mm:ss UTC Z'}}</div>
+        <div>Latitude: {{config.Latitude}} || Longitude: {{config.Longitude}}</div>
+    </div>
+    <div id="wdes">
+        {{config.WeatherDescription}}
+        <div><img src={{config.WeatherIcon}}></div>
+    </div>
+    <div id="wdata">
+        <div class="wdatabox">
+            <div class="wtexthead">Temperature:</div>
+            <div class="wtextdata">Current: <span [style]="rgbTextSafe">{{config.MainTempF}}&#176;F</span> / <span [style]="rgbTextSafe">{{config.MainTempC}}&#176;C</span></div>
+            <div class="wtextdata subdata">Current Maximum: <span [style]="rgbTextMaxSafe">{{config.MainTempMaxF}}&#176;F</span> / <span [style]="rgbTextMaxSafe">{{config.MainTempMaxC}}&#176;C</span></div>
+            <div class="wtextdata subdata">Current Minimum: <span [style]="rgbTextMinSafe">{{config.MainTempMinF}}&#176;F</span> / <span [style]="rgbTextMinSafe">{{config.MainTempMinC}}&#176;C</span></div>
+            <!--<div class="wtextdata">Current Maximum: {{config.MainTempMaxF}}&#176;F / {{config.MainTempMaxC}}&#176;C</div>-->
+            <!--<div class="wtextdata">Current Minimum: {{config.MainTempMinF}}&#176;F / {{config.MainTempMinC}}&#176;C</div>-->
+            <div class="wtextnote">*Maximum and minimum temperatures represent deviations from
+            the main temperature number that may occur in large cities.</div>
+        </div>
+        <div class="wdatabox">
+            <div class="wtexthead">Atmosphere:</div>
+            <div class="wtextdata">Humidity: {{config.MainHumidity}}%</div>
+            <div class="wtextdata">Pressure: {{config.MainPressure}} hPa</div>
+            <div class="wtextdata">Visibility: {{config.Visibility}} meters</div>
+            <div class="wtextdata">Wind Speed: {{config.WindSpeed}} mph</div>
+            <div class="wtextdata">Wind Direction: {{config.WindDegrees}}&#176;</div>
+        </div>
+        <div class="wdatabox">
+            <div class="wtexthead">Sun:</div>
+            <div class="wtextdata">Sunrise: {{config.Sunrise * 1000 | date:'HH:mm:ss'}}</div>
+            <div class="wtextdata">Sunset: {{config.Sunset * 1000 | date:'HH:mm:ss'}}</div>
+        </div>
+    </div>
+</div>

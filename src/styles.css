@@ -1,0 +1,31 @@
+html {
+    height: 100vh;
+}
+
+@media (min-height:361px) {
+    html::after {
+        content: "";
+        background: url("/assets/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        height: 100vh;
+        min-height: 100%;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;  
+    }
+}
+
+
+@media (max-height:360px) {
+    html {
+        background: url("/assets/background.jpg");
+    }
+}

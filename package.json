@@ -4,7 +4,6 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    //"start": "ng serve --host $IP --port $PORT --disableHostCheck true",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

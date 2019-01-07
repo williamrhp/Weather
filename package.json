@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "nvm use 11.2.0 && ng serve --host $IP --port $PORT --disableHostCheck true",
+    "start": "ng serve --host $IP --port $PORT --disableHostCheck true",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
